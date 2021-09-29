@@ -56,4 +56,4 @@ class UserProfile(AbstractBaseUser, PermissionsMixin):
 
     class Meta:
         verbose_name = 'User Profile'
-        verbose_name_plural = 'Users\' Profiles'
+        verbose_name_plural = 'User Profiles'
