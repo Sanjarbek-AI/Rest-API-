@@ -86,4 +86,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+AUTH_USER_MODEL = 'profiles_api.UserProfile'
+
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
