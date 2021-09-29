@@ -1,4 +1,4 @@
-from rest_framework import status
+from rest_framework import status, viewsets
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
@@ -44,3 +44,13 @@ class HelloAPIView(APIView):
         """helps to delete object"""
 
         return Response({"message": 'DELETE'})
+
+
+class HelloViewset(viewsets.ViewSet):
+    """Test API with viewset."""
+
+    def list(self, request):
+        a_viewset = [
+            'Book', 'Week', 'Small', 'Good'
+        ]
+        return Response({"message": a_viewset, "name": "Viewset"})
